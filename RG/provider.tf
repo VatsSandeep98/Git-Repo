@@ -7,14 +7,14 @@ terraform {
   }
 }
 
-# terraform {
-#   backend "azurerm" {
-#     resource_group_name  = "sharma-rg"
-#     storage_account_name = "sandeepstg"
-#     container_name       = "sandeep123"
-#     key                  = "rgterraform.tfstate"
-#   }
-# }
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "sharma-rg"
+    storage_account_name = "sandeepstg"
+    container_name       = "sandeep123"
+    key                  = "rgterraform.tfstate"
+  }
+}
 
 
 provider "azurerm" {
